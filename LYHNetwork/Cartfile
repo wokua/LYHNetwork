@@ -1,0 +1,14 @@
+
+# 对象序列化
+github "Hearst-DD/ObjectMapper"
+# 网络请求
+github "Alamofire/Alamofire" ~> 4.7
+#
+github "SwiftyJSON/SwiftyJSON"
+
+
+
+
+
+
+

@@ -18,7 +18,7 @@ class LYHAgent<T:Any> {
     
 //    static let share = LYHAgent()
     
-    let manager: SessionManager
+    let manager:SessionManager
     
     init() {
         // 创建SessionManager

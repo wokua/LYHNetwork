@@ -8,16 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		0107F1DA2179C360002550B5 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0107F1D22179C360002550B5 /* ObjectMapper.framework */; };
-		0107F1EF2179C45A002550B5 /* LYHRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0107F1E82179C45A002550B5 /* LYHRequestManager.swift */; };
-		0107F1F02179C45A002550B5 /* LYHArrayRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0107F1E92179C45A002550B5 /* LYHArrayRequest.swift */; };
-		0107F1F12179C45A002550B5 /* LYHResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0107F1EA2179C45A002550B5 /* LYHResponse.swift */; };
-		0107F1F22179C45A002550B5 /* LYHAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0107F1EB2179C45A002550B5 /* LYHAgent.swift */; };
-		0107F1F32179C45A002550B5 /* LYHNetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0107F1EC2179C45A002550B5 /* LYHNetworkError.swift */; };
-		0107F1F42179C45A002550B5 /* LYHRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0107F1ED2179C45A002550B5 /* LYHRequest.swift */; settings = {ATTRIBUTES = (Public, ); }; };
-		0107F1F52179C45A002550B5 /* LYHConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0107F1EE2179C45A002550B5 /* LYHConfig.swift */; };
 		010B45482179D238002E2871 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0107F1D72179C360002550B5 /* Alamofire.framework */; };
 		010B45492179D248002E2871 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0107F1D42179C360002550B5 /* SwiftyJSON.framework */; };
 		010B454A2179D26A002E2871 /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0107F1D52179C360002550B5 /* SVProgressHUD.framework */; };
+		012511B621805DAA0058D4F1 /* LYHConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012511AF21805DA90058D4F1 /* LYHConfig.swift */; };
+		012511B721805DAA0058D4F1 /* LYHAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012511B021805DA90058D4F1 /* LYHAgent.swift */; };
+		012511B821805DAA0058D4F1 /* LYHRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012511B121805DAA0058D4F1 /* LYHRequest.swift */; };
+		012511B921805DAA0058D4F1 /* LYHNetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012511B221805DAA0058D4F1 /* LYHNetworkError.swift */; };
+		012511BA21805DAA0058D4F1 /* LYHRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012511B321805DAA0058D4F1 /* LYHRequestManager.swift */; };
+		012511BB21805DAA0058D4F1 /* LYHArrayRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012511B421805DAA0058D4F1 /* LYHArrayRequest.swift */; };
+		012511BC21805DAA0058D4F1 /* LYHResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012511B521805DAA0058D4F1 /* LYHResponse.swift */; };
 		019659362179C2F800ABC61D /* LYHNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0196592C2179C2F800ABC61D /* LYHNetwork.framework */; };
 		0196593B2179C2F800ABC61D /* LYHNetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0196593A2179C2F800ABC61D /* LYHNetworkTests.swift */; };
 		0196593D2179C2F800ABC61D /* LYHNetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = 0196592F2179C2F800ABC61D /* LYHNetwork.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -42,13 +42,13 @@
 		0107F1D72179C360002550B5 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		0107F1D82179C360002550B5 /* ESPullToRefresh.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ESPullToRefresh.framework; path = Carthage/Build/iOS/ESPullToRefresh.framework; sourceTree = "<group>"; };
 		0107F1D92179C360002550B5 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
-		0107F1E82179C45A002550B5 /* LYHRequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYHRequestManager.swift; sourceTree = "<group>"; };
-		0107F1E92179C45A002550B5 /* LYHArrayRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYHArrayRequest.swift; sourceTree = "<group>"; };
-		0107F1EA2179C45A002550B5 /* LYHResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYHResponse.swift; sourceTree = "<group>"; };
-		0107F1EB2179C45A002550B5 /* LYHAgent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYHAgent.swift; sourceTree = "<group>"; };
-		0107F1EC2179C45A002550B5 /* LYHNetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYHNetworkError.swift; sourceTree = "<group>"; };
-		0107F1ED2179C45A002550B5 /* LYHRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYHRequest.swift; sourceTree = "<group>"; };
-		0107F1EE2179C45A002550B5 /* LYHConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYHConfig.swift; sourceTree = "<group>"; };
+		012511AF21805DA90058D4F1 /* LYHConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYHConfig.swift; sourceTree = "<group>"; };
+		012511B021805DA90058D4F1 /* LYHAgent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYHAgent.swift; sourceTree = "<group>"; };
+		012511B121805DAA0058D4F1 /* LYHRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYHRequest.swift; sourceTree = "<group>"; };
+		012511B221805DAA0058D4F1 /* LYHNetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYHNetworkError.swift; sourceTree = "<group>"; };
+		012511B321805DAA0058D4F1 /* LYHRequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYHRequestManager.swift; sourceTree = "<group>"; };
+		012511B421805DAA0058D4F1 /* LYHArrayRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYHArrayRequest.swift; sourceTree = "<group>"; };
+		012511B521805DAA0058D4F1 /* LYHResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYHResponse.swift; sourceTree = "<group>"; };
 		0196592C2179C2F800ABC61D /* LYHNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LYHNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0196592F2179C2F800ABC61D /* LYHNetwork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYHNetwork.h; sourceTree = "<group>"; };
 		019659302179C2F800ABC61D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -95,21 +95,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		0107F1E72179C45A002550B5 /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				0107F1E82179C45A002550B5 /* LYHRequestManager.swift */,
-				0107F1E92179C45A002550B5 /* LYHArrayRequest.swift */,
-				0107F1EA2179C45A002550B5 /* LYHResponse.swift */,
-				0107F1EB2179C45A002550B5 /* LYHAgent.swift */,
-				0107F1EC2179C45A002550B5 /* LYHNetworkError.swift */,
-				0107F1ED2179C45A002550B5 /* LYHRequest.swift */,
-				0107F1EE2179C45A002550B5 /* LYHConfig.swift */,
-			);
-			name = Network;
-			path = ../../../LYHNetworkDemo/LYHNetworkDemo/LYHNetworkDemo/Network;
-			sourceTree = "<group>";
-		};
 		019659222179C2F800ABC61D = {
 			isa = PBXGroup;
 			children = (
@@ -132,7 +117,13 @@
 		0196592E2179C2F800ABC61D /* LYHNetwork */ = {
 			isa = PBXGroup;
 			children = (
-				0107F1E72179C45A002550B5 /* Network */,
+				012511B021805DA90058D4F1 /* LYHAgent.swift */,
+				012511B421805DAA0058D4F1 /* LYHArrayRequest.swift */,
+				012511AF21805DA90058D4F1 /* LYHConfig.swift */,
+				012511B221805DAA0058D4F1 /* LYHNetworkError.swift */,
+				012511B121805DAA0058D4F1 /* LYHRequest.swift */,
+				012511B321805DAA0058D4F1 /* LYHRequestManager.swift */,
+				012511B521805DAA0058D4F1 /* LYHResponse.swift */,
 				0196592F2179C2F800ABC61D /* LYHNetwork.h */,
 				019659302179C2F800ABC61D /* Info.plist */,
 			);
@@ -211,6 +202,7 @@
 				TargetAttributes = {
 					0196592B2179C2F800ABC61D = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 					019659342179C2F800ABC61D = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -277,13 +269,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0107F1F52179C45A002550B5 /* LYHConfig.swift in Sources */,
-				0107F1EF2179C45A002550B5 /* LYHRequestManager.swift in Sources */,
-				0107F1F32179C45A002550B5 /* LYHNetworkError.swift in Sources */,
-				0107F1F22179C45A002550B5 /* LYHAgent.swift in Sources */,
-				0107F1F12179C45A002550B5 /* LYHResponse.swift in Sources */,
-				0107F1F02179C45A002550B5 /* LYHArrayRequest.swift in Sources */,
-				0107F1F42179C45A002550B5 /* LYHRequest.swift in Sources */,
+				012511B621805DAA0058D4F1 /* LYHConfig.swift in Sources */,
+				012511B921805DAA0058D4F1 /* LYHNetworkError.swift in Sources */,
+				012511B721805DAA0058D4F1 /* LYHAgent.swift in Sources */,
+				012511BB21805DAA0058D4F1 /* LYHArrayRequest.swift in Sources */,
+				012511BA21805DAA0058D4F1 /* LYHRequestManager.swift in Sources */,
+				012511B821805DAA0058D4F1 /* LYHRequest.swift in Sources */,
+				012511BC21805DAA0058D4F1 /* LYHResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,6 +421,7 @@
 		019659412179C2F800ABC61D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -449,6 +442,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = w.LYHNetwork;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -457,6 +451,7 @@
 		019659422179C2F800ABC61D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;

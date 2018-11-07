@@ -1,9 +1,9 @@
 //
-//  Config.swift
-//  LYHNetworkDemo
+//  LYHConfig
+//  TFM
 //
-//  Created by lrk on 2018/10/17.
-//  Copyright © 2018年 sku. All rights reserved.
+//  Created by lrk on 2018/10/24.
+//  Copyright © 2018年 KF. All rights reserved.
 //
 
 import Foundation

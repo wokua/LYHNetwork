@@ -1,9 +1,9 @@
 //
-//  Request.swift
-//  LYHNetworkDemo
+//  LYHRequest
+//  TFM
 //
-//  Created by lrk on 2018/10/17.
-//  Copyright © 2018年 sku. All rights reserved.
+//  Created by lrk on 2018/10/24.
+//  Copyright © 2018年 KF. All rights reserved.
 //
 
 import Foundation
@@ -52,7 +52,7 @@ class LYHRequest<T:Any> {
     
     //网络请求方式  默认Post请求
     func method() -> HTTPMethod {
-        return .post
+        return .get
     }
     
     //请求超时，默认Config里面的

@@ -1,9 +1,9 @@
 //
-//  LYHAgent.swift
-//  LYHNetworkDemo
+//  LYHAgent
+//  TFM
 //
-//  Created by lrk on 2018/10/17.
-//  Copyright © 2018年 sku. All rights reserved.
+//  Created by lrk on 2018/10/24.
+//  Copyright © 2018年 KF. All rights reserved.
 //
 
 import Foundation
@@ -18,7 +18,7 @@ class LYHAgent<T:Any> {
     
 //    static let share = LYHAgent()
     
-    let manager:SessionManager
+    let manager: SessionManager
     
     init() {
         // 创建SessionManager
@@ -34,7 +34,12 @@ extension LYHAgent{
     
     func buildRequest(_ request:LYHRequest<T>) -> Alamofire.DataRequest{
         //接口请求地址
-        let url = request.baseUrl() + request.api()
+        let url : String
+        if request.api().hasPrefix("http") {
+             url = request.api()
+        }else{
+             url = request.baseUrl() + request.api()
+        }
         //请求方式
         let method = request.method()
         //请求参数
@@ -59,7 +64,14 @@ extension LYHAgent{
         //请求参数
         let parameters = buildParemeters(request)
         //接口地址
-        let url = request.baseUrl() + request.api()
+        let url : String
+        if request.api().hasPrefix("http") {
+            url = request.api()
+            
+        }else{
+            url = request.baseUrl() + request.api()
+        }
+    
         //请求方式
         let method = request.method()
         

@@ -1,9 +1,9 @@
 //
-//  LYHResponse.swift
-//  LYHNetworkDemo
+// LYHResponse
+//  TFM
 //
-//  Created by lrk on 2018/10/17.
-//  Copyright © 2018年 sku. All rights reserved.
+//  Created by lrk on 2018/10/24.
+//  Copyright © 2018年 KF. All rights reserved.
 //
 
 import Foundation
@@ -25,7 +25,7 @@ extension Alamofire.DataRequest{
             
             var value : [String:Any]?
             value = json!.dictionaryObject
-            
+            print("response value :\(json ?? "")")
             guard let object = Mapper<T>().map(JSON: value!) else{
                 let error = LYHNetworkError.entityEncodFailed
                 return .failure(error)
@@ -123,6 +123,11 @@ extension Alamofire.Request{
         let json = JSON(value)
         guard json.error == nil else{
             let error = LYHNetworkError.jsonEncodFailed
+            return(error,nil)
+        }
+        
+        if json["retCode"].string == "20201" {
+            let error = LYHNetworkError.customFailed(code: Int(json["retCode"].string ?? "") ?? 0, message: json["msg"].string ?? "")
             return(error,nil)
         }
         

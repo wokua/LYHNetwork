@@ -1,9 +1,0 @@
-{
-  "commitish" : "0.11.2",
-  "iOS" : [
-    {
-      "name" : "SQLite",
-      "hash" : "a95a6147e3f5f3f9f74c7f360ca2aeb72ab1db8c1c0d7aeb115885d2cf5bdba5"
-    }
-  ]
-}

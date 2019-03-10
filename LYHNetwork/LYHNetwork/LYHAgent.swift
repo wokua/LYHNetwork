@@ -45,7 +45,7 @@ extension LYHAgent{
         //请求参数
         let parameters = buildParemeters(request)
         
-        return buildRequest(method: method, url: url, parameters: parameters)
+        return buildRequest(method: method.httpMethod, url: url, parameters: parameters)
     }
     
     fileprivate func buildRequest(method: Alamofire.HTTPMethod,
@@ -89,7 +89,7 @@ extension LYHAgent{
                 multipartFormData.append(value.data, withName: key, fileName: value.fileName, mimeType: value.mimeType)
             }
             
-        }, to: url, method: method) { (result) in
+        }, to: url, method: method.httpMethod) { (result) in
             switch result{
             case .success(let upload,_,_):
                 success(upload)

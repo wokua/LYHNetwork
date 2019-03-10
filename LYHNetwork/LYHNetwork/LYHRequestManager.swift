@@ -6,7 +6,6 @@
 //  Copyright © 2018年 KF. All rights reserved.
 //
 import Foundation
-import SVProgressHUD
 import ObjectMapper
 
 public class LYHRequestSubject<T>{

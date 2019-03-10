@@ -9,7 +9,22 @@
 import Foundation
 import Alamofire
 import ObjectMapper
-import SVProgressHUD
+
+enum LYHHTTPMethod : String{
+    case options = "OPTIONS"
+    case get     = "GET"
+    case head    = "HEAD"
+    case post    = "POST"
+    case put     = "PUT"
+    case patch   = "PATCH"
+    case delete  = "DELETE"
+    case trace   = "TRACE"
+    case connect = "CONNECT"
+    
+    var httpMethod:HTTPMethod{
+        return HTTPMethod.init(rawValue: self.rawValue) ?? .get
+    }
+}
 
 // 定义失败的闭包
 typealias FailureHandler = (_ error: LYHNetworkError) -> Void
@@ -51,7 +66,7 @@ class LYHRequest<T:Any> {
     }
     
     //网络请求方式  默认Post请求
-    func method() -> HTTPMethod {
+    func method() -> LYHHTTPMethod {
         return .get
     }
     

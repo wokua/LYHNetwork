@@ -1,0 +1,734 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		418B9082B4ACBE3055391EB4 /* libPods-LYHNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EC260A34065DBA6004D7883A /* libPods-LYHNetwork.a */; };
+		B5A3BA2A22290C0000380C62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A3BA2922290C0000380C62 /* AppDelegate.swift */; };
+		B5A3BA2C22290C0000380C62 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A3BA2B22290C0000380C62 /* ViewController.swift */; };
+		B5A3BA2F22290C0000380C62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5A3BA2D22290C0000380C62 /* Main.storyboard */; };
+		B5A3BA3122290C0100380C62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5A3BA3022290C0100380C62 /* Assets.xcassets */; };
+		B5A3BA3422290C0100380C62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5A3BA3222290C0100380C62 /* LaunchScreen.storyboard */; };
+		B5A3BA3F22290C0100380C62 /* LYHNetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A3BA3E22290C0100380C62 /* LYHNetworkTests.swift */; };
+		B5A3BA4A22290C0100380C62 /* LYHNetworkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A3BA4922290C0100380C62 /* LYHNetworkUITests.swift */; };
+		B5A3BA6122290D0400380C62 /* LYHRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A3BA5A22290D0400380C62 /* LYHRequestManager.swift */; };
+		B5A3BA6222290D0400380C62 /* LYHArrayRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A3BA5B22290D0400380C62 /* LYHArrayRequest.swift */; };
+		B5A3BA6322290D0400380C62 /* LYHResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A3BA5C22290D0400380C62 /* LYHResponse.swift */; };
+		B5A3BA6422290D0400380C62 /* LYHAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A3BA5D22290D0400380C62 /* LYHAgent.swift */; };
+		B5A3BA6522290D0400380C62 /* LYHNetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A3BA5E22290D0400380C62 /* LYHNetworkError.swift */; };
+		B5A3BA6622290D0400380C62 /* LYHRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A3BA5F22290D0400380C62 /* LYHRequest.swift */; };
+		B5A3BA6722290D0400380C62 /* LYHConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A3BA6022290D0400380C62 /* LYHConfig.swift */; };
+		B5A3BA6E22290DEE00380C62 /* JokerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A3BA6D22290DEE00380C62 /* JokerModel.swift */; };
+		B5A3BA7022290DFB00380C62 /* JokerApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A3BA6F22290DFB00380C62 /* JokerApi.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B5A3BA3B22290C0100380C62 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5A3BA1E22290C0000380C62 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5A3BA2522290C0000380C62;
+			remoteInfo = LYHNetwork;
+		};
+		B5A3BA4622290C0100380C62 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5A3BA1E22290C0000380C62 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5A3BA2522290C0000380C62;
+			remoteInfo = LYHNetwork;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		84DE43E62A8DE441A70F45ED /* Pods-LYHNetwork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYHNetwork.debug.xcconfig"; path = "Target Support Files/Pods-LYHNetwork/Pods-LYHNetwork.debug.xcconfig"; sourceTree = "<group>"; };
+		B5A3BA2622290C0000380C62 /* LYHNetwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LYHNetwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5A3BA2922290C0000380C62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B5A3BA2B22290C0000380C62 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B5A3BA2E22290C0000380C62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B5A3BA3022290C0100380C62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B5A3BA3322290C0100380C62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B5A3BA3522290C0100380C62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5A3BA3A22290C0100380C62 /* LYHNetworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LYHNetworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5A3BA3E22290C0100380C62 /* LYHNetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LYHNetworkTests.swift; sourceTree = "<group>"; };
+		B5A3BA4022290C0100380C62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5A3BA4522290C0100380C62 /* LYHNetworkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LYHNetworkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5A3BA4922290C0100380C62 /* LYHNetworkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LYHNetworkUITests.swift; sourceTree = "<group>"; };
+		B5A3BA4B22290C0100380C62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5A3BA5A22290D0400380C62 /* LYHRequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYHRequestManager.swift; sourceTree = "<group>"; };
+		B5A3BA5B22290D0400380C62 /* LYHArrayRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYHArrayRequest.swift; sourceTree = "<group>"; };
+		B5A3BA5C22290D0400380C62 /* LYHResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYHResponse.swift; sourceTree = "<group>"; };
+		B5A3BA5D22290D0400380C62 /* LYHAgent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYHAgent.swift; sourceTree = "<group>"; };
+		B5A3BA5E22290D0400380C62 /* LYHNetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYHNetworkError.swift; sourceTree = "<group>"; };
+		B5A3BA5F22290D0400380C62 /* LYHRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYHRequest.swift; sourceTree = "<group>"; };
+		B5A3BA6022290D0400380C62 /* LYHConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYHConfig.swift; sourceTree = "<group>"; };
+		B5A3BA6822290D1600380C62 /* OC-Bridge-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OC-Bridge-Header.h"; sourceTree = "<group>"; };
+		B5A3BA6D22290DEE00380C62 /* JokerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokerModel.swift; sourceTree = "<group>"; };
+		B5A3BA6F22290DFB00380C62 /* JokerApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokerApi.swift; sourceTree = "<group>"; };
+		B84EE58AFCDD51795BD60DB6 /* Pods-LYHNetwork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYHNetwork.release.xcconfig"; path = "Target Support Files/Pods-LYHNetwork/Pods-LYHNetwork.release.xcconfig"; sourceTree = "<group>"; };
+		EC260A34065DBA6004D7883A /* libPods-LYHNetwork.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LYHNetwork.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B5A3BA2322290C0000380C62 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				418B9082B4ACBE3055391EB4 /* libPods-LYHNetwork.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5A3BA3722290C0100380C62 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5A3BA4222290C0100380C62 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B5A3BA1D22290C0000380C62 = {
+			isa = PBXGroup;
+			children = (
+				B5A3BA2822290C0000380C62 /* LYHNetwork */,
+				B5A3BA3D22290C0100380C62 /* LYHNetworkTests */,
+				B5A3BA4822290C0100380C62 /* LYHNetworkUITests */,
+				B5A3BA2722290C0000380C62 /* Products */,
+				FC7D0DED79BBC405F07C54E3 /* Pods */,
+				D0911CFA2DD1B54B391F604F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B5A3BA2722290C0000380C62 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B5A3BA2622290C0000380C62 /* LYHNetwork.app */,
+				B5A3BA3A22290C0100380C62 /* LYHNetworkTests.xctest */,
+				B5A3BA4522290C0100380C62 /* LYHNetworkUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B5A3BA2822290C0000380C62 /* LYHNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				B5A3BA6922290DC100380C62 /* Test */,
+				B5A3BA5922290D0400380C62 /* LYHNetwork */,
+				B5A3BA2922290C0000380C62 /* AppDelegate.swift */,
+				B5A3BA2B22290C0000380C62 /* ViewController.swift */,
+				B5A3BA6822290D1600380C62 /* OC-Bridge-Header.h */,
+				B5A3BA2D22290C0000380C62 /* Main.storyboard */,
+				B5A3BA3022290C0100380C62 /* Assets.xcassets */,
+				B5A3BA3222290C0100380C62 /* LaunchScreen.storyboard */,
+				B5A3BA3522290C0100380C62 /* Info.plist */,
+			);
+			path = LYHNetwork;
+			sourceTree = "<group>";
+		};
+		B5A3BA3D22290C0100380C62 /* LYHNetworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				B5A3BA3E22290C0100380C62 /* LYHNetworkTests.swift */,
+				B5A3BA4022290C0100380C62 /* Info.plist */,
+			);
+			path = LYHNetworkTests;
+			sourceTree = "<group>";
+		};
+		B5A3BA4822290C0100380C62 /* LYHNetworkUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B5A3BA4922290C0100380C62 /* LYHNetworkUITests.swift */,
+				B5A3BA4B22290C0100380C62 /* Info.plist */,
+			);
+			path = LYHNetworkUITests;
+			sourceTree = "<group>";
+		};
+		B5A3BA5922290D0400380C62 /* LYHNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				B5A3BA5A22290D0400380C62 /* LYHRequestManager.swift */,
+				B5A3BA5B22290D0400380C62 /* LYHArrayRequest.swift */,
+				B5A3BA5C22290D0400380C62 /* LYHResponse.swift */,
+				B5A3BA5D22290D0400380C62 /* LYHAgent.swift */,
+				B5A3BA5E22290D0400380C62 /* LYHNetworkError.swift */,
+				B5A3BA5F22290D0400380C62 /* LYHRequest.swift */,
+				B5A3BA6022290D0400380C62 /* LYHConfig.swift */,
+			);
+			path = LYHNetwork;
+			sourceTree = "<group>";
+		};
+		B5A3BA6922290DC100380C62 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				B5A3BA6B22290DDE00380C62 /* Api */,
+				B5A3BA6A22290DD900380C62 /* Model */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		B5A3BA6A22290DD900380C62 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B5A3BA6D22290DEE00380C62 /* JokerModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B5A3BA6B22290DDE00380C62 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				B5A3BA6F22290DFB00380C62 /* JokerApi.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		D0911CFA2DD1B54B391F604F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EC260A34065DBA6004D7883A /* libPods-LYHNetwork.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FC7D0DED79BBC405F07C54E3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				84DE43E62A8DE441A70F45ED /* Pods-LYHNetwork.debug.xcconfig */,
+				B84EE58AFCDD51795BD60DB6 /* Pods-LYHNetwork.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B5A3BA2522290C0000380C62 /* LYHNetwork */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5A3BA4E22290C0100380C62 /* Build configuration list for PBXNativeTarget "LYHNetwork" */;
+			buildPhases = (
+				1218EA590D838742DF42190D /* [CP] Check Pods Manifest.lock */,
+				B5A3BA2222290C0000380C62 /* Sources */,
+				B5A3BA2322290C0000380C62 /* Frameworks */,
+				B5A3BA2422290C0000380C62 /* Resources */,
+				FD5AF0835E89A4AD3F3F105E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LYHNetwork;
+			productName = LYHNetwork;
+			productReference = B5A3BA2622290C0000380C62 /* LYHNetwork.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B5A3BA3922290C0100380C62 /* LYHNetworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5A3BA5122290C0100380C62 /* Build configuration list for PBXNativeTarget "LYHNetworkTests" */;
+			buildPhases = (
+				B5A3BA3622290C0100380C62 /* Sources */,
+				B5A3BA3722290C0100380C62 /* Frameworks */,
+				B5A3BA3822290C0100380C62 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B5A3BA3C22290C0100380C62 /* PBXTargetDependency */,
+			);
+			name = LYHNetworkTests;
+			productName = LYHNetworkTests;
+			productReference = B5A3BA3A22290C0100380C62 /* LYHNetworkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B5A3BA4422290C0100380C62 /* LYHNetworkUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5A3BA5422290C0100380C62 /* Build configuration list for PBXNativeTarget "LYHNetworkUITests" */;
+			buildPhases = (
+				B5A3BA4122290C0100380C62 /* Sources */,
+				B5A3BA4222290C0100380C62 /* Frameworks */,
+				B5A3BA4322290C0100380C62 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B5A3BA4722290C0100380C62 /* PBXTargetDependency */,
+			);
+			name = LYHNetworkUITests;
+			productName = LYHNetworkUITests;
+			productReference = B5A3BA4522290C0100380C62 /* LYHNetworkUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B5A3BA1E22290C0000380C62 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = LYH;
+				TargetAttributes = {
+					B5A3BA2522290C0000380C62 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					B5A3BA3922290C0100380C62 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = B5A3BA2522290C0000380C62;
+					};
+					B5A3BA4422290C0100380C62 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = B5A3BA2522290C0000380C62;
+					};
+				};
+			};
+			buildConfigurationList = B5A3BA2122290C0000380C62 /* Build configuration list for PBXProject "LYHNetwork" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B5A3BA1D22290C0000380C62;
+			productRefGroup = B5A3BA2722290C0000380C62 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B5A3BA2522290C0000380C62 /* LYHNetwork */,
+				B5A3BA3922290C0100380C62 /* LYHNetworkTests */,
+				B5A3BA4422290C0100380C62 /* LYHNetworkUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B5A3BA2422290C0000380C62 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5A3BA3422290C0100380C62 /* LaunchScreen.storyboard in Resources */,
+				B5A3BA3122290C0100380C62 /* Assets.xcassets in Resources */,
+				B5A3BA2F22290C0000380C62 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5A3BA3822290C0100380C62 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5A3BA4322290C0100380C62 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1218EA590D838742DF42190D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LYHNetwork-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD5AF0835E89A4AD3F3F105E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LYHNetwork/Pods-LYHNetwork-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/ESPullToRefresh/ESPullToRefresh.bundle",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ESPullToRefresh.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LYHNetwork/Pods-LYHNetwork-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B5A3BA2222290C0000380C62 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5A3BA6122290D0400380C62 /* LYHRequestManager.swift in Sources */,
+				B5A3BA6622290D0400380C62 /* LYHRequest.swift in Sources */,
+				B5A3BA6422290D0400380C62 /* LYHAgent.swift in Sources */,
+				B5A3BA6222290D0400380C62 /* LYHArrayRequest.swift in Sources */,
+				B5A3BA2C22290C0000380C62 /* ViewController.swift in Sources */,
+				B5A3BA6E22290DEE00380C62 /* JokerModel.swift in Sources */,
+				B5A3BA6322290D0400380C62 /* LYHResponse.swift in Sources */,
+				B5A3BA2A22290C0000380C62 /* AppDelegate.swift in Sources */,
+				B5A3BA7022290DFB00380C62 /* JokerApi.swift in Sources */,
+				B5A3BA6522290D0400380C62 /* LYHNetworkError.swift in Sources */,
+				B5A3BA6722290D0400380C62 /* LYHConfig.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5A3BA3622290C0100380C62 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5A3BA3F22290C0100380C62 /* LYHNetworkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5A3BA4122290C0100380C62 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5A3BA4A22290C0100380C62 /* LYHNetworkUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B5A3BA3C22290C0100380C62 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B5A3BA2522290C0000380C62 /* LYHNetwork */;
+			targetProxy = B5A3BA3B22290C0100380C62 /* PBXContainerItemProxy */;
+		};
+		B5A3BA4722290C0100380C62 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B5A3BA2522290C0000380C62 /* LYHNetwork */;
+			targetProxy = B5A3BA4622290C0100380C62 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B5A3BA2D22290C0000380C62 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5A3BA2E22290C0000380C62 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B5A3BA3222290C0100380C62 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5A3BA3322290C0100380C62 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B5A3BA4C22290C0100380C62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B5A3BA4D22290C0100380C62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B5A3BA4F22290C0100380C62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84DE43E62A8DE441A70F45ED /* Pods-LYHNetwork.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LYHNetwork/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = a.LYHNetwork;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LYHNetwork/OC-Bridge-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B5A3BA5022290C0100380C62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B84EE58AFCDD51795BD60DB6 /* Pods-LYHNetwork.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LYHNetwork/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = a.LYHNetwork;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LYHNetwork/OC-Bridge-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B5A3BA5222290C0100380C62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LYHNetworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = a.LYHNetworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LYHNetwork.app/LYHNetwork";
+			};
+			name = Debug;
+		};
+		B5A3BA5322290C0100380C62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LYHNetworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = a.LYHNetworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LYHNetwork.app/LYHNetwork";
+			};
+			name = Release;
+		};
+		B5A3BA5522290C0100380C62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LYHNetworkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = a.LYHNetworkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LYHNetwork;
+			};
+			name = Debug;
+		};
+		B5A3BA5622290C0100380C62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LYHNetworkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = a.LYHNetworkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LYHNetwork;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B5A3BA2122290C0000380C62 /* Build configuration list for PBXProject "LYHNetwork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5A3BA4C22290C0100380C62 /* Debug */,
+				B5A3BA4D22290C0100380C62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5A3BA4E22290C0100380C62 /* Build configuration list for PBXNativeTarget "LYHNetwork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5A3BA4F22290C0100380C62 /* Debug */,
+				B5A3BA5022290C0100380C62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5A3BA5122290C0100380C62 /* Build configuration list for PBXNativeTarget "LYHNetworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5A3BA5222290C0100380C62 /* Debug */,
+				B5A3BA5322290C0100380C62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5A3BA5422290C0100380C62 /* Build configuration list for PBXNativeTarget "LYHNetworkUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5A3BA5522290C0100380C62 /* Debug */,
+				B5A3BA5622290C0100380C62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B5A3BA1E22290C0000380C62 /* Project object */;
+}

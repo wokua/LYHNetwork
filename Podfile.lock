@@ -1,0 +1,48 @@
+PODS:
+  - Alamofire (4.8.1)
+  - ESPullToRefresh (2.7)
+  - ObjectMapper (3.4.2)
+  - SnapKit (4.2.0)
+  - SQLite (0.1.14)
+  - SVProgressHUD (2.2.5)
+  - SwiftyJSON (4.2.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - ESPullToRefresh (~> 2.7)
+  - ObjectMapper
+  - SnapKit
+  - SQLite
+  - SVProgressHUD
+  - SwiftyJSON (from `https://github.com/SwiftyJSON/SwiftyJSON.git`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - ESPullToRefresh
+    - ObjectMapper
+    - SnapKit
+    - SQLite
+    - SVProgressHUD
+
+EXTERNAL SOURCES:
+  SwiftyJSON:
+    :git: https://github.com/SwiftyJSON/SwiftyJSON.git
+
+CHECKOUT OPTIONS:
+  SwiftyJSON:
+    :commit: 3f6f1d32df6e5f334593682b20bb829e48bffbee
+    :git: https://github.com/SwiftyJSON/SwiftyJSON.git
+
+SPEC CHECKSUMS:
+  Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
+  ESPullToRefresh: 119e2710b82b75536aab2bbe4883ba119fca35c8
+  ObjectMapper: 0d4402610f4e468903ae64629eec4784531e5c51
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  SQLite: db7178116f530fa3c023a08f9c1f93e643de92e4
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
+
+PODFILE CHECKSUM: 103020999b91b875e48b9ab4bebf7951bdd48dca
+
+COCOAPODS: 1.6.1

@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import SVProgressHUD
 import Alamofire
 
 enum LYHNetworkError : Error {
@@ -49,7 +48,7 @@ extension LYHNetworkError : CustomNSError {
         case .entityEncodFailed : return ""
         case . jsonValueNoDataKeyFailed : return ""
         case .jsonValueNoCodeKeyFailed : return "`code` Field does not exist"
-        case .customFailed(let code , let message) : return message
+        case .customFailed( _ , let message) : return message
         }
     }
     

@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		418B9082B4ACBE3055391EB4 /* libPods-LYHNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EC260A34065DBA6004D7883A /* libPods-LYHNetwork.a */; };
+		2ABAE6238C1D3E55940C11F2 /* Pods_LYHNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 265FDA6FA1BE7EDC6A9422BD /* Pods_LYHNetwork.framework */; };
+		3119E85BB8174866C26410D6 /* Pods_LYHNetworkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 356E60674BE4DA5A63FB15B8 /* Pods_LYHNetworkUITests.framework */; };
+		535BAE4BA35FD8C411C6E9EC /* Pods_LYHNetworkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0135D2A5EF838AFFD7FEBE89 /* Pods_LYHNetworkTests.framework */; };
 		B5A3BA2A22290C0000380C62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A3BA2922290C0000380C62 /* AppDelegate.swift */; };
 		B5A3BA2C22290C0000380C62 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A3BA2B22290C0000380C62 /* ViewController.swift */; };
 		B5A3BA2F22290C0000380C62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5A3BA2D22290C0000380C62 /* Main.storyboard */; };
@@ -44,6 +46,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0135D2A5EF838AFFD7FEBE89 /* Pods_LYHNetworkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LYHNetworkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		22CA96FBA6A0722C77556FB3 /* Pods-LYHNetworkUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYHNetworkUITests.release.xcconfig"; path = "Target Support Files/Pods-LYHNetworkUITests/Pods-LYHNetworkUITests.release.xcconfig"; sourceTree = "<group>"; };
+		265FDA6FA1BE7EDC6A9422BD /* Pods_LYHNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LYHNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D31E91C742DFFA8000016EC /* Pods-LYHNetworkUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYHNetworkUITests.debug.xcconfig"; path = "Target Support Files/Pods-LYHNetworkUITests/Pods-LYHNetworkUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		356E60674BE4DA5A63FB15B8 /* Pods_LYHNetworkUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LYHNetworkUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4603F16B4BB930C64A19B516 /* Pods-LYHNetworkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYHNetworkTests.release.xcconfig"; path = "Target Support Files/Pods-LYHNetworkTests/Pods-LYHNetworkTests.release.xcconfig"; sourceTree = "<group>"; };
 		84DE43E62A8DE441A70F45ED /* Pods-LYHNetwork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYHNetwork.debug.xcconfig"; path = "Target Support Files/Pods-LYHNetwork/Pods-LYHNetwork.debug.xcconfig"; sourceTree = "<group>"; };
 		B5A3BA2622290C0000380C62 /* LYHNetwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LYHNetwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5A3BA2922290C0000380C62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -69,7 +77,7 @@
 		B5A3BA6D22290DEE00380C62 /* JokerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokerModel.swift; sourceTree = "<group>"; };
 		B5A3BA6F22290DFB00380C62 /* JokerApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokerApi.swift; sourceTree = "<group>"; };
 		B84EE58AFCDD51795BD60DB6 /* Pods-LYHNetwork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYHNetwork.release.xcconfig"; path = "Target Support Files/Pods-LYHNetwork/Pods-LYHNetwork.release.xcconfig"; sourceTree = "<group>"; };
-		EC260A34065DBA6004D7883A /* libPods-LYHNetwork.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LYHNetwork.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE57064B464DC45A850FB9BB /* Pods-LYHNetworkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYHNetworkTests.debug.xcconfig"; path = "Target Support Files/Pods-LYHNetworkTests/Pods-LYHNetworkTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				418B9082B4ACBE3055391EB4 /* libPods-LYHNetwork.a in Frameworks */,
+				2ABAE6238C1D3E55940C11F2 /* Pods_LYHNetwork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				535BAE4BA35FD8C411C6E9EC /* Pods_LYHNetworkTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3119E85BB8174866C26410D6 /* Pods_LYHNetworkUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,7 +206,9 @@
 		D0911CFA2DD1B54B391F604F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				EC260A34065DBA6004D7883A /* libPods-LYHNetwork.a */,
+				265FDA6FA1BE7EDC6A9422BD /* Pods_LYHNetwork.framework */,
+				0135D2A5EF838AFFD7FEBE89 /* Pods_LYHNetworkTests.framework */,
+				356E60674BE4DA5A63FB15B8 /* Pods_LYHNetworkUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -206,6 +218,10 @@
 			children = (
 				84DE43E62A8DE441A70F45ED /* Pods-LYHNetwork.debug.xcconfig */,
 				B84EE58AFCDD51795BD60DB6 /* Pods-LYHNetwork.release.xcconfig */,
+				DE57064B464DC45A850FB9BB /* Pods-LYHNetworkTests.debug.xcconfig */,
+				4603F16B4BB930C64A19B516 /* Pods-LYHNetworkTests.release.xcconfig */,
+				2D31E91C742DFFA8000016EC /* Pods-LYHNetworkUITests.debug.xcconfig */,
+				22CA96FBA6A0722C77556FB3 /* Pods-LYHNetworkUITests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -221,7 +237,7 @@
 				B5A3BA2222290C0000380C62 /* Sources */,
 				B5A3BA2322290C0000380C62 /* Frameworks */,
 				B5A3BA2422290C0000380C62 /* Resources */,
-				FD5AF0835E89A4AD3F3F105E /* [CP] Copy Pods Resources */,
+				45DA126723DE31ACA211176D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -236,6 +252,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B5A3BA5122290C0100380C62 /* Build configuration list for PBXNativeTarget "LYHNetworkTests" */;
 			buildPhases = (
+				FE74BA94BB73A5C702DD1038 /* [CP] Check Pods Manifest.lock */,
 				B5A3BA3622290C0100380C62 /* Sources */,
 				B5A3BA3722290C0100380C62 /* Frameworks */,
 				B5A3BA3822290C0100380C62 /* Resources */,
@@ -254,6 +271,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B5A3BA5422290C0100380C62 /* Build configuration list for PBXNativeTarget "LYHNetworkUITests" */;
 			buildPhases = (
+				3BC8FD857BB97DFBB4E9BDD7 /* [CP] Check Pods Manifest.lock */,
 				B5A3BA4122290C0100380C62 /* Sources */,
 				B5A3BA4222290C0100380C62 /* Frameworks */,
 				B5A3BA4322290C0100380C62 /* Resources */,
@@ -361,7 +379,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FD5AF0835E89A4AD3F3F105E /* [CP] Copy Pods Resources */ = {
+		3BC8FD857BB97DFBB4E9BDD7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -369,20 +387,70 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LYHNetwork/Pods-LYHNetwork-resources.sh",
-				"${PODS_CONFIGURATION_BUILD_DIR}/ESPullToRefresh/ESPullToRefresh.bundle",
-				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Check Pods Manifest.lock";
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ESPullToRefresh.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+				"$(DERIVED_FILE_DIR)/Pods-LYHNetworkUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LYHNetwork/Pods-LYHNetwork-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		45DA126723DE31ACA211176D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LYHNetwork/Pods-LYHNetwork-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LYHNetwork/Pods-LYHNetwork-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE74BA94BB73A5C702DD1038 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LYHNetworkTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -613,6 +681,7 @@
 		};
 		B5A3BA5222290C0100380C62 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE57064B464DC45A850FB9BB /* Pods-LYHNetworkTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -633,6 +702,7 @@
 		};
 		B5A3BA5322290C0100380C62 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4603F16B4BB930C64A19B516 /* Pods-LYHNetworkTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -653,6 +723,7 @@
 		};
 		B5A3BA5522290C0100380C62 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D31E91C742DFFA8000016EC /* Pods-LYHNetworkUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -672,6 +743,7 @@
 		};
 		B5A3BA5622290C0100380C62 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22CA96FBA6A0722C77556FB3 /* Pods-LYHNetworkUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

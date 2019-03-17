@@ -15,7 +15,7 @@ open class LYHConfig {
     var baseUrl = ""
     
     //默认超时时间
-    var timeOut: TimeInterval = 5
+    var timeOut: TimeInterval = 15
     
     //默认参数
     func generalParament() -> [String : Any] {

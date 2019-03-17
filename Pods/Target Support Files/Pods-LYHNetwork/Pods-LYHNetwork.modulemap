@@ -1,4 +1,4 @@
-module Pods_LYHNetwork {
+framework module Pods_LYHNetwork {
   umbrella header "Pods-LYHNetwork-umbrella.h"
 
   export *

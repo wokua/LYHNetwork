@@ -1,6 +1,0 @@
-module SQLite {
-  umbrella header "SQLite-umbrella.h"
-
-  export *
-  module * { export * }
-}

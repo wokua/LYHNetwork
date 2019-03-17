@@ -1,6 +1,0 @@
-module ESPullToRefresh {
-  umbrella header "ESPullToRefresh-umbrella.h"
-
-  export *
-  module * { export * }
-}

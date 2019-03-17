@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import ESPullToRefresh
 import SnapKit
 
 class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {

@@ -12,14 +12,14 @@ open class LYHConfig {
     
     static let share = LYHConfig()
     /// 默认baseURL
-    var baseUrl = ""
+    var baseUrl = "http://v.juhe.cn/"
     
     //默认超时时间
     var timeOut: TimeInterval = 15
     
     //默认参数
     func generalParament() -> [String : Any] {
-        return [:]
+        return ["key":"e6522dba527b0633ac079f2e217b1d5e"];
     }
     
     //默认请求头

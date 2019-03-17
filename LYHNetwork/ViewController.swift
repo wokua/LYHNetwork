@@ -34,12 +34,11 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     }
  
     @objc func request(){
-        api.manager.showHUD().on(success: { [weak self](arr) in
+        api.manager.showHUD().on( success: { [weak self](arr) in
             self?.dataArr = arr
             self?.tableView.reloadData()
-        }) { (error) in
+        }).request()
             
-        }.request()
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {

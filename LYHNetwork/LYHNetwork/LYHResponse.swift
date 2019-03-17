@@ -16,7 +16,7 @@ extension Alamofire.DataRequest{
     func responseObject<T:Mappable>( success: ((_ value:T) -> Void)?,
                                      failure: FailureHandler?){
         let serializer = DataResponseSerializer<T>{request,response,data,error in
-            print("request = \(String(describing: request))\n,response = \(String(describing: response))\n,data = \(String(describing: data))\n,error = \(String(describing: error))\n")
+        
             var (requestError,json) = Alamofire.Request.vaildResponse(request, response: response, data: data, error: error)
             
             guard  requestError == nil else{
@@ -25,7 +25,6 @@ extension Alamofire.DataRequest{
             
             var value : [String:Any]?
             value = json!.dictionaryObject
-            print("response value :\(json ?? "")")
             guard let object = Mapper<T>().map(JSON: value!) else{
                 let error = LYHNetworkError.entityEncodFailed
                 return .failure(error)
@@ -39,7 +38,6 @@ extension Alamofire.DataRequest{
     func responseArray<T:ArrayMappable>( success: ((_ value:T) -> Void)?,
                         failure: FailureHandler?){
         let serializer = DataResponseSerializer<T>{request,response,data,error in
-            print("request = \(String(describing: request))\n,response = \(String(describing: response))\n,data = \(String(describing: data))\n,error = \(String(describing: error))\n")
             var (requestError,json) = Alamofire.Request.vaildResponse(request, response: response, data: data, error: error)
 
             guard  requestError == nil else{
@@ -60,14 +58,25 @@ extension Alamofire.DataRequest{
     //解析字符串
     func responseString( success: ((_ value:String) -> Void)?,
                            failure: FailureHandler?){
-        respose(Alamofire.DataRequest.stringResponseSerializer(), success: success, failure: failure)
+        let serializer = DataResponseSerializer<String>{request,response,data,error in
+            var (requestError,json) = Alamofire.Request.vaildResponse(request, response: response, data: data, error: error)
+            
+            guard  requestError == nil else{
+                return .failure(requestError!)
+            }
+        
+            let value = json!.stringValue
+
+            return .success(value)
+        }
+        respose(serializer, success: success, failure: failure)
     }
     
     //解析空子段
     func responseNil( success: ((()) -> Void)?,
                          failure: FailureHandler?){
         let serializer = DataResponseSerializer<()>{request,response,data,error in
-            print("request = \(String(describing: request))\n,response = \(String(describing: response))\n,data = \(String(describing: data))\n,error = \(String(describing: error))\n")
+
             let (requestError,_) = Alamofire.Request.vaildResponse(request, response: response, data: data, error: error)
             
             guard  requestError == nil else{
@@ -97,7 +106,7 @@ extension Alamofire.Request{
     static func vaildResponse(_ request: URLRequest?,
                               response: HTTPURLResponse?,
                               data: Data?, error: Error?) -> (LYHNetworkError?,JSON?){
-        
+        print("request = \(String(describing: request))\n,response = \(String(describing: response))")
         guard error == nil else{
             let error = LYHNetworkError.customFailed(code:-1200, message: (error?.localizedDescription)!)
             return (error,nil)
@@ -121,6 +130,7 @@ extension Alamofire.Request{
             return(error,nil)
         }
         let json = JSON(value)
+        print("data = \(json)")
         guard json.error == nil else{
             let error = LYHNetworkError.jsonEncodFailed
             return(error,nil)

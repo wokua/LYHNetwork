@@ -33,23 +33,27 @@ extension LYHRequestManager{
         return self
     }
     
-    func on(_started:(()->Void)? = nil,success: @escaping (_ value:T) -> Void, failure: @escaping FailureHandler) -> LYHRequestManager<T> {
+    func on(_ started:(()->Void)? = nil,success: ((_ value:T) -> Void)? = nil, failure: FailureHandler? = nil,completed : (()->Void)? = nil) -> LYHRequestManager<T> {
         
-        _started?()
+        started?()
         self.lyhrequest?.success = {[weak self] (item) in
             guard let `self` = self else{return}
             if self.isShowHud == true{
                 SVProgressHUD.dismiss()
             }
-            success(item)
+            success?(item)
+            completed?()
         }
         self.lyhrequest?.failure = {[weak self] (error) in
             guard let `self` = self else{return}
             if self.isShowHud == true{
-                SVProgressHUD.showError(withStatus: error.message)
+                SVProgressHUD.dismiss()
+                SVProgressHUD.showError(withStatus:  error.message)
             }
-            failure(error)
+            failure?(error)
+            completed?()
         }
+        
         return self
     }
     

@@ -1,7 +1,7 @@
 # LYHNetwork
 Network encapsulation library based on Alarmfire and ObjectMapper
 
-使用方式：
+how to use：The detail you can see this demo
 
 import UIKit
 import LYHNetwork
@@ -46,7 +46,7 @@ content <- map["content"]
 }
 }
 
-fileprivate class AAApi : LYHRequest<[JokeModel]>{//（返回数组写数组、单个写单个，空写()，字符串写String）
+fileprivate class AAApi : LYHRequest<[JokeModel]>{//（It can be an array<Mappable>、a model<Mappable>，()，String）
 
 override func method() -> HTTPMethod {
 return .get

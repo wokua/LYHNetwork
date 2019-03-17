@@ -8,13 +8,13 @@
 import Foundation
 import ObjectMapper
 
-public class LYHRequestSubject<T>{
+public class LYHRequestManager<T>{
     weak var lyhrequest : LYHRequest<T>?
 }
 
 private var showHudTipKey = "showHudTipKey"
 
-extension LYHRequestSubject{
+extension LYHRequestManager{
     var isShowHud: Bool? {
         get {
             return objc_getAssociatedObject(self, &showHudTipKey) as? Bool
@@ -26,14 +26,14 @@ extension LYHRequestSubject{
     
 }
 
-extension LYHRequestSubject{
+extension LYHRequestManager{
     
-    func showHUD() -> LYHRequestSubject<T> {
+    func showHUD() -> LYHRequestManager<T> {
         isShowHud = true
         return self
     }
     
-    func on(_started:(()->Void)? = nil,success: @escaping (_ value:T) -> Void, failure: @escaping FailureHandler) -> LYHRequestSubject<T> {
+    func on(_started:(()->Void)? = nil,success: @escaping (_ value:T) -> Void, failure: @escaping FailureHandler) -> LYHRequestManager<T> {
         
         _started?()
         self.lyhrequest?.success = {[weak self] (item) in
@@ -62,7 +62,7 @@ extension LYHRequestSubject{
     
 }
 
-extension LYHRequestSubject where T : Mappable{
+extension LYHRequestManager where T : Mappable{
     func request(){
         
         guard let request = lyhrequest else {
@@ -90,7 +90,7 @@ extension LYHRequestSubject where T : Mappable{
     }
 }
 
-extension LYHRequestSubject where T : ArrayMappable{
+extension LYHRequestManager where T : ArrayMappable{
     func request(){
        
         guard let request = lyhrequest else {
@@ -118,7 +118,7 @@ extension LYHRequestSubject where T : ArrayMappable{
     }
 }
 
-extension LYHRequestSubject where T == (){
+extension LYHRequestManager where T == (){
     func request(){
        
         guard let request = lyhrequest else {
@@ -146,7 +146,7 @@ extension LYHRequestSubject where T == (){
     }
 }
 
-extension LYHRequestSubject where T == String{
+extension LYHRequestManager where T == String{
     func request(){
        
         guard let request = lyhrequest else {

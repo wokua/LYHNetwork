@@ -38,7 +38,7 @@ struct File {
 
 class LYHRequest<T:Any> {
     
-    fileprivate lazy var subject = LYHRequestSubject<T>()
+    fileprivate lazy var subject = LYHRequestManager<T>()
     
     var agent : LYHAgent<T>?
     
@@ -88,7 +88,7 @@ class LYHRequest<T:Any> {
 
 extension LYHRequest{
     
-    var manager : LYHRequestSubject<T> {
+    var manager : LYHRequestManager<T> {
         get{
             subject.lyhrequest = self
             return subject

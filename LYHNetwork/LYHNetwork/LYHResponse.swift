@@ -136,8 +136,16 @@ extension Alamofire.Request{
             return(error,nil)
         }
         
-        if json["retCode"].string == "20201" {
-            let error = LYHNetworkError.customFailed(code: Int(json["retCode"].string ?? "") ?? 0, message: json["msg"].string ?? "")
+        var codeJson = json
+        for responseStr in LYHConfig.share.codeResponse() {
+            codeJson = codeJson[responseStr]
+        }
+        if codeJson.string != "0" && codeJson.string != nil && codeJson.string != "200"{
+            var messageJson = json
+            for responseStr in LYHConfig.share.messageResponse() {
+                messageJson = codeJson[responseStr]
+            }
+            let error = LYHNetworkError.customFailed(code: Int(codeJson.string ?? "") ?? 0, message: messageJson.string ?? "")
             return(error,nil)
         }
         

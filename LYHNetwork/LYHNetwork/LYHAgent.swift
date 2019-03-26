@@ -108,8 +108,8 @@ extension LYHAgent{
     fileprivate func buildParemeters(_ request: LYHRequest<T>)->[String:Any]{
         
         var pra = request.param
-        request.addParameters(&pra)
         addGeneralParament(&pra)
+        request.addParameters(&pra)
         return pra
     }
     //添加默认参数

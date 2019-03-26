@@ -31,4 +31,14 @@ open class LYHConfig {
     func generalResponse() -> [String] {
         return ["result","data"]
     }
+    
+    //默认code解析字段
+    func codeResponse() -> [String] {
+        return ["error_code"]
+    }
+    
+    //默认错误消息解析字段
+    func messageResponse() -> [String] {
+        return ["reason"]
+    }
 }

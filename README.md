@@ -1,6 +1,6 @@
 # LYHNetwork
 Network encapsulation library based on Alarmfire and ObjectMapper
-
+结合AFNetworking和ObjectMapper二次的Swift网络请求的封装
 how to use：The detail you can see this demo
 
 import UIKit

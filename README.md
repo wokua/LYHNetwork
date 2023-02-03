@@ -1,5 +1,5 @@
 # LYHNetwork
-结合AFNetworking和ObjectMapper的Swift网络封装
+结合Alamofire和ObjectMapper的Swift网络封装
 Network encapsulation library based on Alarmfire and ObjectMapper
 
 
